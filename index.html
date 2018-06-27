@@ -1,0 +1,13 @@
+<div ng-app="app">
+  <div class="ctrl container" ng-controller="myCtrl">
+    <div class="item" ng-repeat="c in characters">
+      {{c.name}}
+      <div dnd-list="scenes">
+        <div class="item" ng-repeat="scene in c.scenes" dnd-draggable="scene">
+          <div class="is-pulled-right move-ctrl"><i class="fa fa-fw fa-bars"></i></div>
+          {{scene.content}}
+        </div>
+        </div>
+    </div>
+  </div>
+</div>

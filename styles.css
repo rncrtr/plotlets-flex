@@ -1,0 +1,17 @@
+.container{
+  border: 1px solid blue;
+  display: flex;
+  flex-direction: row;
+}
+
+.item{
+  background: rgba(0,0,255,0.1);
+  flex-grow: 1;
+  align-self: stretch;
+  padding: 0px 5px;
+}
+
+.item .item{
+  height: 80px;
+  padding: 0px;
+}
